@@ -78,7 +78,7 @@ public class BuscarNomeActivity extends Activity implements TextWatcher, OnItemC
     public void backBuscarNome(List<Pessoa> names) {
 
         this.pessoas.clear();
-        this.pessoas.addAll(pessoas);
+        this.pessoas.addAll(names);
         adapter.notifyDataSetChanged();
 
     }
