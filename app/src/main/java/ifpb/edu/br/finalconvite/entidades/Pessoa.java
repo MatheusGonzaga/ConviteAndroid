@@ -76,7 +76,7 @@ public class Pessoa implements Serializable {
     @Override
     public String toString() {
 
-        return "[id: " + id + "; nome: " + nome + "; email: " + email + "; endereco: " + endereco + "; cpf: " + cpf + "]";
+        return "[nome: " + nome + "; email: " + email + "; endereco: " + endereco + "; cpf: " + cpf + "]";
 
     }
 }
