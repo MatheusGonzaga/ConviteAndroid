@@ -28,8 +28,7 @@ public class CadastroActivity extends AppCompatActivity implements OnClickListen
         email = (EditText) findViewById(R.id.editTextEmail);
         endereco = (EditText) findViewById(R.id.editTextEndereco);
         cpf = (EditText) findViewById(R.id.editTextCpf);
-
-
+        cadastrar = (Button) findViewById(R.Id.buttonCadastrar);
         cadastrar.setOnClickListener(this);
     }
 
