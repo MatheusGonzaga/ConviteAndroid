@@ -49,13 +49,14 @@ public class BuscarNomeActivity extends Activity implements TextWatcher, OnItemC
     }
 
     @Override
-    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+    public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
+            Log.i("EditTextListener", "beforeTextChanged: " + charSequence);
     }
 
     @Override
     public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
-
+        
+        Log.i("EditTextListener", "onTextChanged: " + charSequence);
         String nome = charSequence.toString();
 
         if (nome.length() >= TAMANHO_MINIMO_TEXTO) {
@@ -70,8 +71,8 @@ public class BuscarNomeActivity extends Activity implements TextWatcher, OnItemC
     }
 
     @Override
-    public void afterTextChanged(Editable s) {
-
+    public void afterTextChanged(Editable editable) {
+         Log.i("EditTextListener","afterTextChanged: " + editable); 
     }
 
     @Override
@@ -95,7 +96,7 @@ public class BuscarNomeActivity extends Activity implements TextWatcher, OnItemC
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+        Log.i("EditTextListener", "Position: " + position);
         Intent it = new Intent(this, PessoaActivity.class);
         it.putExtra("pessoa", pessoas.get(position));
         startActivity(it);
