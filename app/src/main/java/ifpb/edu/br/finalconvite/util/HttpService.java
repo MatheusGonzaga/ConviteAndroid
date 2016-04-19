@@ -13,7 +13,7 @@ import java.net.URL;
 
 public class HttpService {
 
-    private static final String URL_CONTEXT = "http://ladoss.com.br:8773/Convite_SERVICE/";
+    private static final String URL_CONTEXT = "http://192.168.1.254:8773/Convite_SERVICE/";
 
     public static Response sendGetRequest(String service, String jsonObject)
             throws MalformedURLException, IOException{
